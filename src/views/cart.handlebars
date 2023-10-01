@@ -1,0 +1,19 @@
+<div>
+    <div>
+        {{#each cart}}
+            <div>
+                <p> Id: {{cart}}</p>
+                <img src="{{this.product.thumbnail}}">
+                <div>
+                    <h1> {{this.title}}</h1>
+                    <h2> {{this.description}}</h2>
+                    <h2> $ {{this.price}}</h2>
+                    <h2> Quantity: {{this.Quantity}}</h2>
+                    <h2> Total: {{this.Quantity}}</h2>
+                <div>
+                    <button>Delete</button>
+                </div>
+                </div>
+            </div>
+                    {{/each}}
+    </div>

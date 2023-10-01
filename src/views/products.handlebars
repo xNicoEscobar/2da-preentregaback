@@ -1,0 +1,17 @@
+<div>
+    <div>
+        {{#each products}}
+            <div>
+                <p> Id: {{this._id}}</p>
+                <img src="{{this.thumbnail}}">
+                <div>
+                    <h1> {{this.title}}</h1>
+                    <h2> {{this.description}}</h2>
+                    <h2> $ {{this.price}}</h2>
+
+                    <button>Add product to cart</button>
+                </div>
+            </div>
+            {{/each}}
+    </div>
+</div>
